@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import MobileMenu from "./mobileMenu";
 
 const Navbar = () => {
   useEffect(() => {}, []);
@@ -39,7 +38,35 @@ const Navbar = () => {
           }}
         />
       </div>
-      <MobileMenu />
+      <div className="m__menu" id="mobileMenu">
+        <ul className="menu__list">
+          <li className="menu__item">
+            <a href="#" className="menu__item_link">
+              schedule
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="#" className="menu__item_link">
+              jurdge
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="#" className="menu__item_link">
+              gallery
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="#" className="menu__item_link">
+              sponsor
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="#" className="menu__item_link">
+              contact
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
